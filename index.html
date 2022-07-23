@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia Content</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <h2>Multimedia</h2>
+    <h1>Audio Tag</h1>
+    <audio
+      id="audio1"
+      controls
+      loop
+      src="./Downloads/kesariya-mashup-amtee-arijit-singh-atif-aslam-brahmastra-ranbir-k-alia-emraan-hashmi.mp3"
+    ></audio>
+    <span class="material-icons" id="icon" style="font-size: 50px; color:blue">volume_off</span>
+    <h1>Video Tag</h1>
+    <video
+      src="./Downloads/02. Drawing Turtles (Story)-rPi80SwbEDI.mp4"
+      controls
+      width="300"
+      height="100"
+    ></video>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/UT5F9AXjwhg"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+
+    <script>
+      var x=document.getElementById("audio1");
+      var y=document.getElementById("icon");
+      y.onclick=function(){
+        y.style.color="red";
+        x.pause();
+      }
+
+    </script>
+  </body>
+</html>
